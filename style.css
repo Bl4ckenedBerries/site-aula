@@ -1,0 +1,181 @@
+/* CSS reset usando o caractere coringa (*) */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+
+}
+/* Variáveis para a paleta de cores */
+:root{
+    --cor-marrom-escuro: #4e342e;
+    --cor-marrom-medio: #b07d52;
+    --cor-branco: #ffffff;
+    --cor-fundo-pagina: #f5efe6;
+    --cor-fundo-secao: #ffffff;
+    --cor-sombra: rgba(0,0,0,0.3);
+    --cor-fundo-dica: #fff8e1;
+    --cor-borda-dica: #f0ad4e;
+    --cor-borda-tabela: #c0d3c4;
+    --cor-texto: #333333;
+    --cor-texto-creme: #e6d7c3;
+    --cor-marrom-hover: #935f3a;
+}
+
+
+
+/* Regra de formatação*/
+body
+{
+    font-family: Arial, Helvetica, sans-serif; /*fonte do texto*/
+    background-color: var(--cor-fundo-pagina);
+}
+
+header{
+    /* background-color: #4e342e; */
+    background-color: var(--cor-marrom-escuro);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 40px 0px;
+}
+
+h1
+{
+    font-size: 30px;
+    /* background-color: #1419a9; */
+}
+
+p
+{
+    font-size: 18px;
+}
+
+nav
+{
+    background-color: var(--cor-marrom-medio);
+    /* margin-top: 1px; */
+    /* margin-left: 30px; */
+    margin: 2px;
+    padding: 20px;
+    text-align:center;
+}
+
+nav a
+{
+ color: var(--cor-branco);
+ text-decoration: none;
+ padding: 8px 14px;
+ border-radius: 6px;
+}
+
+nav a:hover    /*Quando passar o mouse em cima*/
+{
+ background-color: var(--cor-marrom-hover);
+}
+
+main
+{
+  width: 900px; /*largura de um bloco*/
+  margin: 0px auto;
+}
+
+section
+{
+    margin-top: 30px;
+    background-color: var(--cor-fundo-secao);
+    padding: 30px;
+    /*
+    deslocamento horizontal
+    deslocamento vertical
+    desfoque
+    */
+    box-shadow: 0px 5px 10px var(--cor-sombra);
+    border-radius: 10px; /*cantos arrendondados*/
+
+    
+}
+/*
+font-family - propriedade
+Arial, Helvetica, sans-serif - valor da propriedade
+ */
+ /* CNTRL + ; = comentário (css) */
+ 
+ section h2
+ {
+    color: var(--cor-marrom-escuro);
+    border-bottom: 3px solid var(--cor-marrom-medio);
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+ }
+
+ section p
+ {
+    margin-bottom: 15px;
+    line-height: 140%;
+
+ }
+ /* Criar uma classe de CSS */
+
+.dica
+{
+    background-color: var(--cor-fundo-dica);
+    border-left: 4px solid var(--cor-borda-dica);
+    padding: 15px 18px;
+    border-radius: 8px;
+ }
+
+ table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,td
+{
+    border: 1px solid var(--cor-borda-tabela);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th
+{
+ background-color: var(--cor-branco);
+ color: var(--cor-marrom-escuro)
+}
+
+section ul, section ol {
+    margin-left: 24px;
+    margin-bottom: 12px;
+
+}
+section li {
+    margin-bottom: 5px;
+}
+section img {
+    width: 100%;
+}
+.horario-funcionamento td{
+    border:none;
+    border-bottom: 1px solid var (--cor-borda-tabela);
+} 
+form label {
+    display: block; 
+    margin: 10px 0px 4px;
+    color: var(--cor-marrom-escuro);
+}
+
+form input, form textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--cor-borda-tabela);   
+}
+
+form button {
+    border: none;
+    margin-top: 15px;
+    background-color: var(--cor-marrom-medio);
+    color: var(--cor-branco);
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+}

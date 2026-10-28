@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Arabica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- parte superior -->
+    <header>
+        <h1>Cafeteria Arábica</h1>
+        <p>O melhor café da cidade, preparado de maneira artesanal desde 1741</p>
+    </header>
+<nav>
+    <a href="#Sobre">Sobre Nós</a>
+    <a href="#Cardápio">Cardápio</a>
+    <a href="#Especiais">Especiais</a>
+    <a href="#Ambiente">Ambiente</a>
+    <a href="#">Reserva</a>
+    <a href="#">Horário</a>
+    <a href="#">Contato</a>
+</nav>
+<main>
+    <section id="Sobre">
+        <h2>Sobre nós</h2>
+        <p>
+            A Cafeteria Arabica utiliza um processo artesanal para preparar o melhor café para seus clientes. 
+            Sempre em busca das melhores estratégias e usando os melhores procedimentos. Somos antigos e novos ao mesmo tempo.
+        Não tente entender isso.</p>
+        <p>
+            Mais que uma cafeteria, somos um ponto de encontro:
+                 um lugar aconchegante para trabalhar, reencontrar amigos ou simplesmente relaxar com um café quentinho.
+            </p>
+        <p class="dica"><strong>Novidade:</strong> agora também servimos opções veganas e sem gluten.</p>
+    </section>
+    
+    <section id="Cardápio">
+        <h2>Cardápio</h2>
+        <p>Confira as nossas opções de Cardápio:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Expresso</th>
+                    <th>Café curto e encorpado</th>
+                    <th>R$6.00</th>
+                </tr>
+                <tr>
+                    <th>Capuccino</th>
+                    <th>Expresso, leite vaporizado e canela</th>
+                    <th>R$9.00</th>
+                </tr>
+                <tr>
+                    <th>Latte</th>
+                    <th>Café suave com bastante leite cremoso</th>
+                    <th>R$10.00</th>
+                </tr>
+                <tr>
+                    <th>Pão de Queijo</th>
+                    <th>Quentinho e feito na casa</th>
+                    <th>R$5.00</th>
+                </tr>
+                <tr>
+                    <th>Mocha</th>
+                    <th>Café,chocolate e chantilly.</th>
+                    <th>R$12.00</th>
+                </tr>
+                <tr>
+                    <th>Bolo de Cenoura</th>
+                    <th>Fatia generosa com cobertura de chocolate</th>
+                    <th>R$8.00</th>
+                </tr>
+                <tr>
+                    <th>Pão Vegano</th>
+                    <th>Sem Glutén sem cheiro sem nada.</th>
+                    <th>R$35.00</th>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section id="Especiais">
+        <h2>Especiais</h2>
+        <p>Confira algumas opções especiais da casa:</p>
+        <ol>
+            <li><strong>Cafe gelado da casa</strong> - com calda de caramelo artesanal</li>
+            <li><strong>Combo da manhã</strong>: Cappucino + Pão de Queijo por R$95,00</li>
+            <li><strong>Cookie recheado</strong> - assado na hora, servido morno.</li>
+            <li><strong>Cha do dia</strong> - Infusões naturais que mudam a cada semana.</li>
+        </ol>
+        <div class="dica">
+            <strong>Terça e dia de promoção:</strong> na compra de qaulquer cafe, o segundo sai pela metade do preço!
+            <hr>
+            Aguarde novas promoções.
+        </div>
+    </section>
+    
+    <section id="Ambiente">
+        <h2>Ambiente</h2>
+        <p>Espaço natural pensado em seu conforto: Iluminação natural, Wi-Fi Gratuito,
+            Tomadas em todas as suas mesas.
+        </p>
+        <img src="imagens/cafeteria.jpg" alt="maquina de cafe em um fundo de concreto com luz por cimas">
+    </section>
+    <section>
+        <h2>Horario de funcionamento</h2>
+        <table class="horario-funcionamento ">
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda a Sexta</td>
+                    <td>07h as 20h</td>
+                </tr>
+                <tr>
+                    <td>Sabado</td>
+                    <td>08h as 22h</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>08h as 14h</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+        <br>
+        <br>
+        <br>
+        <br>
+    <section>
+        <h2>Reserve sua Mesa</h2>
+        <p>Preencha o formulario abaixo para fazer a reserva da sua mesa</p>
+    <form action="">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Seu nome completo">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="voce@dominio.com">
+        <label for="pessoas">Numero de Pessoas:</label>
+        <input type="number" id="pessoas" placeholder="Ex: 4">
+        <label for="obs">Observações:</label>
+        <textarea id="obs" rows="3" placeholder="horario desejado,aniversario, etc"></textarea>
+        <button type="submit">Reservar</button>
+    </form>
+    </section>
+</main>
+
+</body>
+</html>
